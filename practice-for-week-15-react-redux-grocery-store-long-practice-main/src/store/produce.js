@@ -18,7 +18,7 @@ export default function produceReducer(state = {},action) {
         nextState[item.id] = item
       });
      
-    return [nextState]
+    return nextState;
     default:
       return newState;
   }

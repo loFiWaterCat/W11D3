@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux'
 function ProduceList() {
   const produce = useSelector(state => state.produce);
   
-  const produceArr = Object.values(produce);
-
+  const produceArr = Object.values(produce);   // produce array should be an array of objects. not an array with one object 
+  console.log('array',produceArr)
   return (
     <>
       <h2>All produce</h2>
