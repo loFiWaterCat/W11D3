@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "redux-logger": "^3.0.6"
+  },
+  "dependencies": {
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0"
   }
 }
