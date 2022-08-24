@@ -1,6 +1,6 @@
 import ProduceDetails from './ProduceDetails';
 import './ProduceList.css';
-
+import { useSelector } from 'react-redux'
 function ProduceList() {
   const produce = {};
   
