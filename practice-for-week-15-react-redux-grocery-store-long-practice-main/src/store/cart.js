@@ -20,13 +20,17 @@ export default function cartReducer(state = {}, action) {
       } else {
         newState[action.id].count += 1;
       }
+      return newState
     case REMOVE_PRODUCE:
-      if (!newState[action.id] || newState[action.id].count === 0 ){
-        return newState;
+      if (newState[action.id].count === 0 ){
+        //logic to remove from state
       } else {
           newState[action.id].count -= 1;
       }
+      return newState
     default:
       return newState;
   }
+
+  
 }
